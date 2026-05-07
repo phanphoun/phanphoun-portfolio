@@ -23,10 +23,10 @@ html.light-mode {
 }
 
 html.light-mode body {
-  @apply bg-[#f8f9fa] text-gray-900;
+  @apply bg-gray-50 text-gray-900;
 }
 
-html.light-mode .bg-\[\#050713\] {
+html.light-mode .bg-slate-950 {
   @apply bg-white;
 }
 
@@ -66,19 +66,19 @@ html.light-mode .hover\:bg-gray-800:hover {
   @apply hover:bg-gray-200;
 }
 
-html.light-mode .from-\[#070a1a\] {
+html.light-mode .from-slate-900 {
   @apply from-gray-50;
 }
 
-html.light-mode .via-\[#070a1a\] {
+html.light-mode .via-slate-950 {
   @apply via-gray-100;
 }
 
-html.light-mode .to-\[#050713\] {
+html.light-mode .to-slate-900 {
   @apply to-gray-100;
 }
 
-html.light-mode .bg-\[#0b0f1f\] {
+html.light-mode .bg-slate-950 {
   @apply bg-white;
 }
 

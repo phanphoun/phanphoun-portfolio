@@ -54,7 +54,7 @@ const socialLinks = [
 </script>
 
 <template>
-  <div class="min-h-screen bg-[#050713] text-white selection:bg-lime-400/30">
+  <div class="min-h-screen bg-slate-950 text-white selection:bg-lime-400/30">
     <!-- Background Glow -->
     <div class="fixed inset-0 overflow-hidden pointer-events-none">
       <div class="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] bg-lime-400/10 blur-[120px] rounded-full"></div>
@@ -166,7 +166,7 @@ const socialLinks = [
                   <button
                     type="submit"
                     :disabled="isSubmitting"
-                    class="group relative w-full overflow-hidden rounded-xl bg-lime-400 px-8 py-4 font-bold text-[#050713] transition-all hover:bg-lime-300 hover:shadow-[0_0_20px_rgba(163,230,53,0.3)] disabled:opacity-50 disabled:cursor-not-allowed"
+                    class="group relative w-full overflow-hidden rounded-xl bg-lime-400 px-8 py-4 font-bold text-slate-950 transition-all hover:bg-lime-300 hover:shadow-[0_0_20px_rgba(163,230,53,0.3)] disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     <span class="relative z-10 flex items-center justify-center gap-2">
                       {{ isSubmitting ? 'Sending Message...' : 'Send Message' }}

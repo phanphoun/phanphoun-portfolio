@@ -67,7 +67,7 @@ onUnmounted(() => {
             <div v-reveal="800" class="flex flex-wrap items-center gap-6">
               <router-link
                 to="/contact"
-                class="group relative inline-flex items-center justify-center rounded-2xl bg-lime-400 px-10 py-5 font-black text-[#050713] transition-all hover:bg-lime-300 hover:shadow-[0_0_40px_rgba(163,230,53,0.3)] transform hover:scale-105 active:scale-95 overflow-hidden"
+                class="group relative inline-flex items-center justify-center rounded-2xl bg-lime-400 px-10 py-5 font-black text-slate-950 transition-all hover:bg-lime-300 hover:shadow-[0_0_40px_rgba(163,230,53,0.3)] transform hover:scale-105 active:scale-95 overflow-hidden"
               >
                 <span class="relative z-10">Let's Talk</span>
                 <div class="absolute inset-0 translate-y-full group-hover:translate-y-0 bg-white/20 transition-transform duration-500"></div>
@@ -93,7 +93,7 @@ onUnmounted(() => {
               
               <!-- Main Image Container -->
               <div class="relative z-10 h-[450px] w-72 sm:h-[580px] sm:w-[420px] rounded-[3.5rem] bg-gradient-to-tr from-white/10 to-white/5 p-4 backdrop-blur-xl border border-white/10 shadow-2xl transition-all duration-700 hover:scale-[1.02] hover:shadow-[0_0_60px_rgba(163,230,53,0.1)]">
-                <div class="h-full w-full rounded-[2.8rem] overflow-hidden bg-[#050713] relative">
+                <div class="h-full w-full rounded-[2.8rem] overflow-hidden bg-slate-950 relative">
                    <!-- Slider Images -->
                    <TransitionGroup name="fade">
                       <img
@@ -173,7 +173,7 @@ onUnmounted(() => {
             v-reveal="400 + index * 100"
             class="group p-10 rounded-[2.5rem] bg-white/[0.02] border border-white/5 hover:bg-white/[0.05] hover:border-lime-400/30 transition-all duration-500 hover:-translate-y-2"
           >
-            <div class="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-8 group-hover:scale-110 group-hover:bg-lime-400 group-hover:text-[#050713] transition-all duration-500">
+            <div class="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-8 group-hover:scale-110 group-hover:bg-lime-400 group-hover:text-slate-950 transition-all duration-500">
                <span class="text-2xl">{{ index === 0 ? '💻' : index === 1 ? '⚡' : '📱' }}</span>
             </div>
             <h4 class="text-2xl font-bold text-white mb-4">{{ s.title }}</h4>

@@ -51,7 +51,7 @@ const prevImg = () => {
 </script>
 
 <template>
-  <div class="min-h-screen bg-[#050713] text-white selection:bg-lime-400/30 overflow-hidden">
+  <div class="min-h-screen bg-slate-950 text-white selection:bg-lime-400/30 overflow-hidden">
     <!-- Background Glow -->
     <div class="fixed inset-0 pointer-events-none">
       <div class="absolute top-[20%] left-[-10%] w-[500px] h-[500px] bg-lime-400/5 blur-[120px] rounded-full"></div>
@@ -108,7 +108,7 @@ const prevImg = () => {
                 <div class="absolute inset-x-4 top-1/2 -translate-y-1/2 flex justify-between z-20 opacity-0 group-hover/slider:opacity-100 transition-opacity duration-300">
                   <button 
                     @click="prevImg"
-                    class="w-10 h-10 rounded-full bg-black/40 backdrop-blur-md border border-white/10 flex items-center justify-center text-white hover:bg-lime-400 hover:text-[#050713] transition-all transform hover:scale-110"
+                    class="w-10 h-10 rounded-full bg-black/40 backdrop-blur-md border border-white/10 flex items-center justify-center text-white hover:bg-lime-400 hover:text-slate-950 transition-all transform hover:scale-110"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
@@ -116,7 +116,7 @@ const prevImg = () => {
                   </button>
                   <button 
                     @click="nextImg"
-                    class="w-10 h-10 rounded-full bg-black/40 backdrop-blur-md border border-white/10 flex items-center justify-center text-white hover:bg-lime-400 hover:text-[#050713] transition-all transform hover:scale-110"
+                    class="w-10 h-10 rounded-full bg-black/40 backdrop-blur-md border border-white/10 flex items-center justify-center text-white hover:bg-lime-400 hover:text-slate-950 transition-all transform hover:scale-110"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />

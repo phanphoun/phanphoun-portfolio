@@ -61,7 +61,7 @@ const getLevelColor = (level: number) => {
 </script>
 
 <template>
-  <div class="min-h-screen bg-[#050713] selection:bg-lime-400/30 overflow-hidden">
+  <div class="min-h-screen bg-slate-950 selection:bg-lime-400/30 overflow-hidden">
     <!-- Background Elements -->
     <div class="fixed inset-0 pointer-events-none">
       <div class="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full"></div>

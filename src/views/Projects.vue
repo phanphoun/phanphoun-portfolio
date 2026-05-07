@@ -42,7 +42,7 @@ const closeModal = () => {
 </script>
 
 <template>
-  <div class="min-h-screen bg-[#050713]">
+  <div class="min-h-screen bg-slate-950">
     <div class="container mx-auto px-6 py-16 md:py-24">
       <div class="max-w-6xl mx-auto">
         <!-- Header -->
@@ -124,7 +124,7 @@ const closeModal = () => {
                 <div class="mt-auto flex items-center gap-4">
                   <button
                     @click="openModal(project)"
-                    class="flex-1 bg-white/5 hover:bg-lime-400 hover:text-[#050713] text-white px-6 py-3 rounded-xl font-bold text-sm transition-all duration-300 border border-white/10 hover:border-lime-400"
+                    class="flex-1 bg-white/5 hover:bg-lime-400 hover:text-slate-950 text-white px-6 py-3 rounded-xl font-bold text-sm transition-all duration-300 border border-white/10 hover:border-lime-400"
                   >
                     View Details
                   </button>
@@ -179,7 +179,7 @@ const closeModal = () => {
         >
           <div
             v-if="isModalOpen && selectedProject"
-            class="bg-[#0b0f1f] rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-hidden border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.5)] flex flex-col md:flex-row"
+            class="bg-slate-950 rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-hidden border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.5)] flex flex-col md:flex-row"
           >
             <!-- Modal Left: Image -->
             <div :class="`md:w-1/2 bg-gradient-to-br ${selectedProject.gradient} relative overflow-hidden flex items-center justify-center`">
@@ -261,7 +261,7 @@ const closeModal = () => {
                     :href="selectedProject.liveUrl"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="flex-1 flex items-center justify-center gap-3 bg-lime-400 hover:bg-lime-300 text-[#050713] px-8 py-4 rounded-2xl font-bold transition-all shadow-lg shadow-lime-400/10"
+                    class="flex-1 flex items-center justify-center gap-3 bg-lime-400 hover:bg-lime-300 text-slate-950 px-8 py-4 rounded-2xl font-bold transition-all shadow-lg shadow-lime-400/10"
                   >
                     <span>Visit Site</span>
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

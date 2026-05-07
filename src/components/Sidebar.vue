@@ -94,7 +94,7 @@ watch(() => route.path, () => {
             class="flex items-center transition-all duration-300 group rounded-2xl"
             :class="[
               isActive(item.path) 
-                ? 'bg-lime-400 text-[#050713] shadow-lg shadow-lime-400/20' 
+                ? 'bg-lime-400 text-slate-950 shadow-lg shadow-lime-400/20' 
                 : 'text-white/40 hover:text-white hover:bg-white/5',
               isCollapsed && !drawer ? 'justify-center p-3' : 'gap-4 px-4 py-3.5'
             ]"

@@ -34,7 +34,7 @@ const education = [
 </script>
 
 <template>
-  <div class="min-h-screen bg-[#050713] text-white selection:bg-lime-400/30 overflow-hidden">
+  <div class="min-h-screen bg-slate-950 text-white selection:bg-lime-400/30 overflow-hidden">
     <!-- Background Elements -->
     <div class="fixed inset-0 pointer-events-none">
       <div class="absolute top-[10%] left-[-10%] w-[500px] h-[500px] bg-lime-400/5 blur-[120px] rounded-full"></div>
@@ -68,7 +68,7 @@ const education = [
           >
             <!-- Roadmap Milestone Dot -->
             <div 
-              class="absolute left-4 md:left-1/2 top-10 w-12 h-12 bg-[#050713] border-4 border-white/10 rounded-2xl transform -translate-x-1/2 flex items-center justify-center z-20 group-hover:border-lime-400 group-hover:scale-110 transition-all duration-500 shadow-2xl"
+              class="absolute left-4 md:left-1/2 top-10 w-12 h-12 bg-slate-950 border-4 border-white/10 rounded-2xl transform -translate-x-1/2 flex items-center justify-center z-20 group-hover:border-lime-400 group-hover:scale-110 transition-all duration-500 shadow-2xl"
               :class="index === 0 ? 'md:-translate-x-1/2' : 'md:-translate-x-1/2'"
             >
               <span class="text-xl group-hover:scale-110 transition-transform">{{ edu.icon }}</span>
@@ -83,7 +83,7 @@ const education = [
             >
               <!-- Side 1: Info (Alternates) -->
               <div :class="index % 2 === 0 ? 'md:order-1 md:text-right' : 'md:order-2 md:text-left'" class="pl-20 md:pl-0">
-                 <span class="inline-block px-4 py-1.5 bg-lime-400 text-[#050713] rounded-xl text-xs font-black uppercase tracking-widest mb-4">
+                 <span class="inline-block px-4 py-1.5 bg-lime-400 text-slate-950 rounded-xl text-xs font-black uppercase tracking-widest mb-4">
                     {{ edu.period }}
                  </span>
                  <h3 class="text-2xl md:text-4xl font-bold text-white mb-2 group-hover:text-lime-300 transition-colors leading-tight">

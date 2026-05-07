@@ -32,7 +32,7 @@ const experiences = [
 </script>
 
 <template>
-  <div class="min-h-screen bg-[#050713] text-white selection:bg-lime-400/30 overflow-hidden">
+  <div class="min-h-screen bg-slate-950 text-white selection:bg-lime-400/30 overflow-hidden">
     <!-- Background Glow -->
     <div class="fixed inset-0 pointer-events-none">
       <div class="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full"></div>
@@ -65,7 +65,7 @@ const experiences = [
             class="relative flex flex-col md:flex-row items-center gap-12"
           >
             <!-- Timeline Node -->
-            <div class="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-[#050713] border-2 border-lime-400 z-10 transform -translate-x-1/2 shadow-[0_0_15px_rgba(163,230,53,0.5)]"></div>
+            <div class="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-slate-950 border-2 border-lime-400 z-10 transform -translate-x-1/2 shadow-[0_0_15px_rgba(163,230,53,0.5)]"></div>
 
             <!-- Content Card -->
             <div 
@@ -126,7 +126,7 @@ const experiences = [
         <h3 class="text-2xl font-bold text-white mb-6">Want to work together?</h3>
         <router-link 
           to="/contact" 
-          class="inline-flex items-center gap-3 bg-lime-400 text-[#050713] px-10 py-5 rounded-2xl font-black transition-all hover:bg-lime-300 hover:shadow-[0_0_30px_rgba(163,230,53,0.3)] transform hover:scale-105"
+          class="inline-flex items-center gap-3 bg-lime-400 text-slate-950 px-10 py-5 rounded-2xl font-black transition-all hover:bg-lime-300 hover:shadow-[0_0_30px_rgba(163,230,53,0.3)] transform hover:scale-105"
         >
           <span>Get In Touch</span>
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

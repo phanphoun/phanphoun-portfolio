@@ -3,7 +3,7 @@ import { testimonials } from '@/config/testimonials'
 </script>
 
 <template>
-  <div class="min-h-screen bg-gradient-to-b from-[#070a1a] via-[#050713] to-[#070a1a]">
+  <div class="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900">
     <div class="container mx-auto px-6 py-14">
       <div class="max-w-6xl mx-auto">
         <h1 v-reveal class="text-5xl font-bold text-white mb-4 text-center">What Others Say</h1>

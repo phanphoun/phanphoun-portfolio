@@ -53,7 +53,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="min-h-screen bg-[#050713]">
+  <div class="min-h-screen bg-slate-950">
     <header class="md:hidden fixed top-0 left-0 right-0 z-40 border-b border-white/10 bg-gray-900/80 backdrop-blur">
       <div class="flex items-center justify-between px-4 py-3">
         <button
