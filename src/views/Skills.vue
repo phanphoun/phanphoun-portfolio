@@ -5,19 +5,27 @@ import { computed } from 'vue'
 const categories = [
   {
     name: 'Core Technologies',
-    skills: ['HTML', 'CSS', 'JAVASCRIPT', 'PYTHON']
+    skills: ['HTML', 'CSS', 'JAVASCRIPT', 'PYTHON', 'PHP']
   },
   {
-    name: 'Frontend & UI',
-    skills: ['REACT JS', 'NEXT JS', 'TAILWIND CSS', 'FLUTTER']
+    name: 'Frontend Frameworks',
+    skills: ['REACT JS', 'NEXT JS', 'Vue.js']
+  },
+  {
+    name: 'Styling & UI',
+    skills: ['TAILWIND CSS', 'FIGMA']
   },
   {
     name: 'Backend & Database',
-    skills: ['NODE JS', 'MONGO DB']
+    skills: ['NODE JS', 'MONGO DB', 'MySQL', 'LARAVEL', 'REDIS']
   },
   {
-    name: 'Tools & Design',
-    skills: ['GITHUB', 'FIGMA']
+    name: 'DevOps & Cloud',
+    skills: ['DOCKER', 'AWS', 'GIT', 'GITHUB']
+  },
+  {
+    name: 'AI & Tools',
+    skills: ['OPENAI', 'CHAT GPT', 'POSTMAN']
   }
 ]
 
@@ -41,7 +49,17 @@ const getSkillColor = (name: string) => {
     'PYTHON': 'shadow-yellow-300/10 hover:border-yellow-300/50',
     'NEXT JS': 'shadow-white/10 hover:border-white/50',
     'FIGMA': 'shadow-pink-400/10 hover:border-pink-400/50',
-    'FLUTTER': 'shadow-cyan-300/10 hover:border-cyan-300/50',
+    'Vue.js': 'shadow-green-400/10 hover:border-green-400/50',
+    'MySQL': 'shadow-blue-500/10 hover:border-blue-500/50',
+    'PHP': 'shadow-blue-600/10 hover:border-blue-600/50',
+    'LARAVEL': 'shadow-red-600/10 hover:border-red-600/50',
+    'POSTMAN': 'shadow-orange-400/10 hover:border-orange-400/50',
+    'DOCKER': 'shadow-blue-400/10 hover:border-blue-400/50',
+    'GIT': 'shadow-orange-500/10 hover:border-orange-500/50',
+    'OPENAI': 'shadow-gray-400/10 hover:border-gray-400/50',
+    'CHAT GPT': 'shadow-green-400/10 hover:border-green-400/50',
+    'REDIS': 'shadow-red-500/10 hover:border-red-500/50',
+    'AWS': 'shadow-orange-400/10 hover:border-orange-400/50',
   }
   return colors[name] || 'shadow-white/10 hover:border-white/30'
 }
@@ -120,7 +138,15 @@ const getLevelColor = (level: number) => {
                       :class="skill.iconClass"
                       loading="lazy"
                       decoding="async"
+                      @error="(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.style.display = 'none';
+                        target.nextElementSibling?.classList.remove('hidden');
+                      }"
                     />
+                    <div class="hidden w-10 h-10 flex items-center justify-center text-2xl">
+                      {{ skill.name.charAt(0) }}
+                    </div>
                   </div>
                   
                   <div class="text-right">

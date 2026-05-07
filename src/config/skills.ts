@@ -70,7 +70,7 @@ export const skills: Skill[] = [
     bg: 'bg-yellow-300/10',
     border: 'border-yellow-300/30',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg',
-    level: 80
+    level: 40
   },
   {
     name: 'NEXT JS',
@@ -88,10 +88,73 @@ export const skills: Skill[] = [
     level: 85
   },
   {
-    name: 'FLUTTER',
-    bg: 'bg-cyan-300/10',
-    border: 'border-cyan-300/30',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg',
+    name: 'Vue.js',
+    bg: 'bg-green-400/10',
+    border: 'border-green-400/30',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg',
+    level: 80
+  },
+  {
+    name: 'MySQL',
+    bg: 'bg-blue-500/10',
+    border: 'border-blue-500/30',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg',
+    level: 70
+  },
+  {
+    name: 'PHP',
+    bg: 'bg-blue-600/10',
+    border: 'border-blue-600/30',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg',
+    level: 65
+  },
+  {
+    name: 'LARAVEL',
+    bg: 'bg-red-600/10',
+    border: 'border-red-600/30',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg',
+    level: 60
+  },
+  {
+    name: 'POSTMAN',
+    bg: 'bg-orange-400/10',
+    border: 'border-orange-400/30',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg',
     level: 75
   },
+  {
+    name: 'DOCKER',
+    bg: 'bg-blue-400/10',
+    border: 'border-blue-400/30',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg',
+    level: 50
+  },
+  {
+    name: 'GIT',
+    bg: 'bg-orange-500/10',
+    border: 'border-orange-500/30',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg',
+    level: 70
+  },
+  {
+    name: 'CHAT GPT',
+    bg: 'bg-green-400/10',
+    border: 'border-green-400/30',
+    icon: 'https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg',
+    level: 60
+  },
+  {
+    name: 'REDIS',
+    bg: 'bg-red-500/10',
+    border: 'border-red-500/30',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg',
+    level: 50
+  },
+  {
+    name: 'AWS',
+    bg: 'bg-orange-400/10',
+    border: 'border-orange-400/30',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg',
+    level: 40
+  }
 ]
