@@ -2,7 +2,7 @@
 import { ref, nextTick, watch } from 'vue'
 import { useChatbot } from '@/composables/useChatbot'
 
-const { messages, isOpen, isTyping, sendMessage, toggle, close } = useChatbot()
+const { messages, isOpen, isTyping, isAiMode, sendMessage, toggle, close } = useChatbot()
 const inputText = ref('')
 const messagesContainer = ref<HTMLDivElement>()
 const inputRef = ref<HTMLInputElement>()
@@ -100,10 +100,14 @@ const quickQuestions = [
             </svg>
           </div>
           <div>
-            <h3 class="text-white font-bold text-sm">Phoun AI</h3>
+            <h3 class="text-white font-bold text-sm flex items-center gap-2">
+              Phoun AI
+              <span v-if="isAiMode" class="px-1.5 py-0.5 bg-lime-400/10 text-lime-400 text-[9px] font-bold uppercase tracking-wider rounded border border-lime-400/20">Gemini</span>
+              <span v-else class="px-1.5 py-0.5 bg-white/5 text-white/40 text-[9px] font-bold uppercase tracking-wider rounded border border-white/5">Rule</span>
+            </h3>
             <p class="text-lime-400 text-[10px] font-semibold uppercase tracking-wider flex items-center gap-1.5">
               <span class="w-1.5 h-1.5 rounded-full bg-lime-400 animate-pulse"></span>
-              Online
+              {{ isAiMode ? 'AI Powered' : 'Online' }}
             </p>
           </div>
         </div>
