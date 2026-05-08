@@ -69,7 +69,7 @@ import { testimonials } from '@/config/testimonials'
         </div>
 
         <!-- Social Proof Stats -->
-        <div v-reveal="300" class="mt-24 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
+        <!-- <div v-reveal="300" class="mt-24 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
           <div class="text-center p-8 rounded-3xl bg-white/[0.03] border border-white/5 hover:border-lime-400/30 transition-all">
             <div class="text-4xl font-black text-lime-400 mb-2">99%</div>
             <p class="text-white/40 text-sm font-bold uppercase tracking-widest">Client Satisfaction</p>
@@ -82,7 +82,7 @@ import { testimonials } from '@/config/testimonials'
             <div class="text-4xl font-black text-lime-400 mb-2">10+</div>
             <p class="text-white/40 text-sm font-bold uppercase tracking-widest">Happy Clients</p>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

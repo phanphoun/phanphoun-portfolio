@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue'
-import { RouterLink, useRoute } from 'vue-router'
+import { RouterLink, useRoute, useRouter } from 'vue-router'
 
 const props = defineProps<{
   drawer?: boolean
@@ -13,6 +13,7 @@ const emit = defineEmits<{
 }>()
 
 const route = useRoute()
+const router = useRouter()
 const isCollapsed = ref(false)
 
 const toggleCollapse = () => {
@@ -124,12 +125,12 @@ watch(() => route.path, () => {
 
     <!-- User Profile Footer -->
     <div v-if="!isCollapsed || drawer" class="p-6 border-t border-white/5 bg-black/20">
-      <div class="flex items-center gap-3">
+      <div class="flex items-center gap-3 cursor-pointer hover:scale-105 transition-transform duration-300" @click="router.push('/about')">
         <div class="w-10 h-10 rounded-xl overflow-hidden border border-white/10 shadow-lg shadow-lime-400/5">
           <img src="/images/phounphan.png" alt="Phoun Phan" class="w-full h-full object-cover" />
         </div>
         <div class="overflow-hidden">
-          <p class="text-xs font-bold text-white truncate">Phoun Phan</p>
+          <p class="text-xs font-bold text-white truncate">Phan Phoun</p>
           <p class="text-[10px] text-white/30 truncate uppercase tracking-widest font-semibold mt-0.5">Software Developer</p>
         </div>
       </div>

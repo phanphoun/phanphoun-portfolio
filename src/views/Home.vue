@@ -61,7 +61,7 @@ onUnmounted(() => {
             </h2>
 
             <p v-reveal="600" class="text-white/50 text-lg leading-relaxed max-w-xl mb-12">
-              Building next-generation web applications with precision code and modern aesthetics. Specializing in <span class="text-white font-medium">Vue.js</span> and <span class="text-white font-medium">Full-stack solutions</span>.
+              Building next-generation web applications with precision code and modern aesthetics. Specializing in <span class="text-white font-medium">Frontend Development</span> and <span class="text-white font-medium">Backend Development</span>.
             </p>
 
             <div v-reveal="800" class="flex flex-wrap items-center gap-6">
@@ -146,7 +146,7 @@ onUnmounted(() => {
       </div>
 
       <!-- Credibility Section -->
-      <div v-reveal="200" class="mt-20 flex flex-wrap items-center justify-center gap-6">
+      <!-- <div v-reveal="200" class="mt-20 flex flex-wrap items-center justify-center gap-6">
         <div
           v-for="b in credibilityBadges"
           :key="b"
@@ -155,7 +155,7 @@ onUnmounted(() => {
           <div class="w-1.5 h-1.5 rounded-full bg-lime-400 group-hover:scale-150 transition-transform"></div>
           <span class="text-sm font-bold text-white/40 group-hover:text-white/80 transition-colors uppercase tracking-widest">{{ b }}</span>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <!-- Services Section -->

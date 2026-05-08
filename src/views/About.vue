@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { testimonials } from '@/config/testimonials'
-import { personalInfo, stats, interests, profileImages } from '@/config/about'
+import { personalInfo, stats, interests, profileImages, institution , value } from '@/config/about'
 const currentImgIndex = ref(0)
 
 const nextImg = () => {
@@ -31,10 +31,10 @@ const prevImg = () => {
           </h1>
           <div class="space-y-6 text-white/60 text-lg leading-relaxed max-w-2xl">
             <p>
-              I am a passionate software developer based in Phnom Penh, Cambodia. My journey in the digital world began with a simple curiosity about how things work behind the screen, which soon evolved into a full-fledged career in building modern web and mobile applications.
+              I am a passionate software developer based in Phnom Penh, Cambodia. My journey in the digital world began with a simple curiosity about how things work behind the screen, which soon evolved into a full-fledged career in building modern <span class="text-lime-300">Full Stack</span> applications.
             </p>
             <p>
-              Currently studying and working at <span class="text-white font-semibold">PN Cambodia</span>, I focus on creating seamless user experiences using <span class="text-lime-300">Vue</span>, <span class="text-lime-300">TypeScript</span>, and <span class="text-lime-300">Tailwind CSS</span>. I believe that great software is not just about writing code, but about solving real-world problems.
+              Currently studying at <a :href="institution.url" target="_blank" class="text-lime-300 hover:underline">{{ institution.name }}</a>, I focus on creating seamless user experiences using <span class="text-lime-300">Vue</span>, <span class="text-lime-300">TypeScript</span>, and <span class="text-lime-300">Tailwind CSS</span>. I believe that great software is not just about writing code, but about solving real-world problems.
             </p>
           </div>
           
@@ -118,7 +118,10 @@ const prevImg = () => {
           <p class="text-white/40 text-sm font-bold uppercase tracking-widest">{{ stat.label }}</p>
         </router-link>
       </div>
-
+      <div class="flex items-center gap-4 mb-12">
+        <h3 class="text-2xl font-bold text-white whitespace-nowrap">Core Values</h3>
+        <div class="h-[1px] w-full bg-gradient-to-r from-white/10 to-transparent"></div>
+      </div>
       <!-- Core Values -->
       <div v-reveal="400" class="grid md:grid-cols-3 gap-8 mb-32">
         <div class="p-8 rounded-3xl bg-white/[0.03] border border-white/5 hover:border-lime-400/30 transition-all">
@@ -127,8 +130,8 @@ const prevImg = () => {
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
             </svg>
           </div>
-          <h3 class="text-xl font-bold mb-3">Efficiency First</h3>
-          <p class="text-white/40 text-sm leading-relaxed">I strive to write clean, optimized code that delivers the best performance possible without compromising on readability.</p>
+          <h3 class="text-xl font-bold mb-3">{{ value.efficiency.title }}</h3>
+          <p class="text-white/40 text-sm leading-relaxed">{{ value.efficiency.description }}</p>
         </div>
         <div class="p-8 rounded-3xl bg-white/[0.03] border border-white/5 hover:border-lime-400/30 transition-all">
           <div class="w-12 h-12 bg-blue-500/10 rounded-2xl flex items-center justify-center text-blue-400 mb-6">
@@ -136,8 +139,8 @@ const prevImg = () => {
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" />
             </svg>
           </div>
-          <h3 class="text-xl font-bold mb-3">User-Centric</h3>
-          <p class="text-white/40 text-sm leading-relaxed">Every line of code I write is aimed at creating an intuitive and accessible experience for the end user.</p>
+          <h3 class="text-xl font-bold mb-3">{{ value.userCentric.title }}</h3>
+          <p class="text-white/40 text-sm leading-relaxed">{{ value.userCentric.description }}</p>
         </div>
         <div class="p-8 rounded-3xl bg-white/[0.03] border border-white/5 hover:border-lime-400/30 transition-all">
           <div class="w-12 h-12 bg-purple-500/10 rounded-2xl flex items-center justify-center text-purple-400 mb-6">
@@ -145,13 +148,13 @@ const prevImg = () => {
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
             </svg>
           </div>
-          <h3 class="text-xl font-bold mb-3">Creative Solutions</h3>
-          <p class="text-white/40 text-sm leading-relaxed">I enjoy taking on complex challenges and finding creative, out-of-the-box solutions that stand out.</p>
+          <h3 class="text-xl font-bold mb-3">{{ value.continuousLearning.title }}</h3>
+          <p class="text-white/40 text-sm leading-relaxed">{{ value.continuousLearning.description }}</p>
         </div>
       </div>
 
       <!-- Testimonials -->
-      <div v-reveal="500" class="mb-32">
+      <!-- <div v-reveal="500" class="mb-32">
         <div class="flex items-center gap-4 mb-12">
           <h3 class="text-2xl font-bold text-white whitespace-nowrap">What People Say</h3>
           <div class="h-[1px] w-full bg-gradient-to-r from-white/10 to-transparent"></div>
@@ -172,7 +175,7 @@ const prevImg = () => {
               </div>
            </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Interests -->
       <div v-reveal="600">

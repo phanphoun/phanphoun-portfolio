@@ -22,10 +22,10 @@ export const stats = [
 export const interests = [
   { name: 'Programming', icon: '💻' },
   { name: 'UI/UX Design', icon: '🎨' },
-  { name: 'Mobile Apps', icon: '📱' },
   { name: 'Databases', icon: '🗄️' },
   { name: 'DevOps', icon: '🚀' },
-  { name: 'AI/ML', icon: '🤖' }
+  { name: 'AI/ML', icon: '🤖' },
+  { name: 'Cloud Computing', icon: '☁️' }
 ]
 
 export const profileImages = [
@@ -34,3 +34,25 @@ export const profileImages = [
   '/images/source.jpg',
   '/images/thine.jpg'
 ]
+
+export const institution = {
+  name : 'PN Cambodia',
+  degree : 'Bachelor of Science in Computer Science',
+  year : '2022 - 2024',
+  url : 'https://www.passerellesnumeriques.org/what-we-do/cambodia/'
+}
+
+export const value = {
+  efficiency: {
+    title: 'Efficiency First',
+    description: 'I strive to write clean, optimized code that delivers the best performance possible without compromising on readability.'
+  },
+  userCentric: {
+    title: 'User-Centric',
+    description: 'Every line of code I write is aimed at creating an intuitive and accessible experience for the end user.'
+  },
+  continuousLearning: {
+    title: 'Continuous Learning',
+    description: 'I believe in staying up-to-date with the latest technologies and best practices to deliver the best possible solutions.'
+  }
+}

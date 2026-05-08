@@ -51,6 +51,11 @@ export const floatingIcons: FloatingIcon[] = [
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg',
     class: 'icon-pos-4',
   },
+  {
+    name: 'Python',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg',
+    class: 'icon-pos-5',
+  },
 ]
 
 export const credibilityBadges = [

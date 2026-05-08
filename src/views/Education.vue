@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { education } from '@/config/education'
+
 </script>
 
 <template>
@@ -55,10 +56,13 @@ import { education } from '@/config/education'
                  <span class="inline-block px-4 py-1.5 bg-lime-400 text-slate-950 rounded-xl text-xs font-black uppercase tracking-widest mb-4">
                     {{ edu.period }}
                  </span>
-                 <h3 class="text-2xl md:text-4xl font-bold text-white mb-2 group-hover:text-lime-300 transition-colors leading-tight">
+                 <h3 class="text-2xl md:text-4xl font-bold text-white mb-2 ">
                     {{ edu.degree }}
                  </h3>
-                 <p class="text-xl font-medium text-white/40 mb-6">{{ edu.school }}</p>
+                 <p class="text-xl font-medium text-white/40 mb-6 hover:text-lime-300 transition-colors cursor-pointer underline"> 
+                  {{ edu.school }}
+                 </p>
+                  
                  <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-2xl text-xs font-bold text-white/60">
                     <span class="w-2 h-2 rounded-full bg-lime-400"></span>
                     {{ edu.gpa }}
