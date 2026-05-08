@@ -2,6 +2,7 @@
 import { onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import Sidebar from './components/Sidebar.vue'
+import ChatBot from './components/ChatBot.vue'
 import { usePageMeta } from './composables/usePageMeta'
 
 const route = useRoute()
@@ -92,7 +93,7 @@ onBeforeUnmount(() => {
       <RouterView />
     </main>
 
-
+    <ChatBot />
   </div>
 </template>
 

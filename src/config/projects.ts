@@ -42,7 +42,7 @@ export const projects: Project[] = [
     title: 'Student Management System',
     description: 'Full-stack educational management platform with role-based access control and advanced reporting.',
     fullDescription: 'A comprehensive full-stack educational management platform built for institutions to manage students, teachers, courses, enrollments, and grades. Features advanced role-based access control with JWT authentication. Includes full CRUD operations, CSV export capabilities, advanced search and filtering, OpenAPI/Swagger documentation, and a comprehensive test suite.',
-    techStack: ['Django 5', 'React 18', 'TypeScript', 'Vite', 'Tailwind CSS', 'SQLite/PostgreSQL'],
+    techStack: ['Django 5', 'React 18', 'Tailwind CSS', 'MySQL'],
     features: [
       'JWT Authentication with access & refresh tokens',
       'Role-based access control (Admin, Teacher, Student)',
@@ -100,5 +100,108 @@ export const projects: Project[] = [
     gradient: 'from-orange-500 to-red-700',
     image: '/images/portfolio.png',
     imageAlt: 'Portfolio website showcase'
+  },
+  {
+    id: 5,
+    title: 'Express MySQL MVC',
+    description: 'Backend project implementing MVC architecture with Express.js and MySQL database.',
+    fullDescription: 'A structured backend application built with Express.js following the Model-View-Controller (MVC) architectural pattern. Integrates with MySQL for data persistence and provides a clean separation of concerns for scalable application development.',
+    techStack: ['Node.js', 'Express.js', 'MySQL', 'MVC Architecture'],
+    features: [
+      'MVC architectural pattern',
+      'MySQL database integration',
+      'RESTful API endpoints',
+      'Modular code structure',
+      'Database connection pooling'
+    ],
+    startDate: 'November 2023',
+    endDate: 'December 2023',
+    githubUrl: 'https://github.com/phanphoun/express-mysql-mvc',
+    gradient: 'from-cyan-500 to-blue-700',
+    image: '/images/express.png',
+    imageAlt: 'Express MySQL MVC architecture'
+  },
+  {
+    id: 6,
+    title: 'OOP TypeScript',
+    description: 'Object-Oriented Programming examples and patterns implemented in TypeScript.',
+    fullDescription: 'A comprehensive collection of Object-Oriented Programming concepts and design patterns implemented in TypeScript. Demonstrates practical applications of classes, inheritance, polymorphism, encapsulation, and common design patterns to write clean, maintainable code.',
+    techStack: ['TypeScript', 'OOP Patterns', 'Design Patterns'],
+    features: [
+      'Class inheritance and polymorphism',
+      'Design pattern implementations',
+      'Encapsulation and abstraction',
+      'Type-safe OOP practices',
+      'Real-world use case examples'
+    ],
+    startDate: 'September 2023',
+    endDate: 'October 2023',
+    githubUrl: 'https://github.com/phanphoun/oop-typescript',
+    gradient: 'from-pink-500 to-rose-700',
+    image: '/images/oop typescript.png',
+    imageAlt: 'OOP TypeScript examples'
+  },
+  {
+    id: 7,
+    title: 'REST API',
+    description: 'RESTful API implementation with best practices and standard HTTP methods.',
+    fullDescription: 'A well-structured REST API implementation following industry best practices. Includes proper HTTP methods usage, status codes, error handling, request validation, and authentication. Designed to be consumed by frontend applications or mobile apps.',
+    techStack: ['Node.js', 'Express.js', 'REST Architecture', 'JSON'],
+    features: [
+      'RESTful endpoints design',
+      'HTTP methods (GET, POST, PUT, DELETE)',
+      'Proper status codes',
+      'Request validation',
+      'Error handling middleware',
+      'API documentation'
+    ],
+    startDate: 'August 2023',
+    endDate: 'September 2023',
+    githubUrl: 'https://github.com/phanphoun/REST-API',
+    gradient: 'from-teal-500 to-cyan-700',
+    image: '/images/rest api.png',
+    imageAlt: 'REST API architecture'
+  },
+  {
+    id: 8,
+    title: 'Express Auth',
+    description: 'Authentication system with Express.js featuring JWT tokens and secure password handling.',
+    fullDescription: 'A complete authentication solution built with Express.js. Implements user registration, login, password hashing with bcrypt, JWT token generation and validation, refresh tokens, and protected routes. Follows security best practices for user authentication.',
+    techStack: ['Node.js', 'Express.js', 'JWT', 'bcrypt', 'Security'],
+    features: [
+      'User registration and login',
+      'JWT access and refresh tokens',
+      'Secure password hashing with bcrypt',
+      'Protected route middleware',
+      'Token validation',
+      'Session management'
+    ],
+    startDate: 'July 2023',
+    endDate: 'August 2023',
+    githubUrl: 'https://github.com/phanphoun/express-auth',
+    gradient: 'from-amber-500 to-orange-700',
+    image: '/images/express auth.png',
+    imageAlt: 'Express authentication system'
+  },
+  {
+    id: 9,
+    title: 'Khmer Dev Platform',
+    description: 'Development platform supporting Khmer developers with resources and community features.',
+    fullDescription: 'A platform designed to support and empower Khmer developers in their learning journey. Provides educational resources, coding challenges, community forums, and tools to help developers improve their skills and connect with other developers in the Khmer tech community.',
+    techStack: ['Web Technologies', 'Community Platform'],
+    features: [
+      'Educational resources',
+      'Coding challenges',
+      'Community forums',
+      'Developer profiles',
+      'Learning paths',
+      'Khmer language support'
+    ],
+    startDate: 'June 2024',
+    endDate: 'July 2024',
+    githubUrl: 'https://github.com/phanphoun/khmer-dev-platform',
+    gradient: 'from-yellow-500 to-amber-700',
+    image: '/images/khmer dev.png',
+    imageAlt: 'Khmer developer platform'
   }
 ]

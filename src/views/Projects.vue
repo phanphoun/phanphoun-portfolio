@@ -75,7 +75,7 @@ const closeModal = () => {
         <!-- Projects Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
           <template v-if="isLoading">
-            <SkeletonLoader type="project" :count="4" />
+            <SkeletonLoader type="project" :count="9" />
           </template>
           <template v-else-if="filteredProjects.length > 0">
             <div

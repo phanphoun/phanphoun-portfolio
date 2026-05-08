@@ -103,7 +103,12 @@ const prevImg = () => {
 
       <!-- Stats Section -->
       <div v-reveal="300" class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-32">
-        <div v-for="stat in stats" :key="stat.label" class="relative group p-8 rounded-3xl bg-white/[0.03] border border-white/5 transition-all hover:bg-white/[0.06] hover:border-lime-400/30 overflow-hidden">
+        <router-link
+          v-for="stat in stats"
+          :key="stat.label"
+          :to="(stat as any).route || '/about'"
+          class="relative group p-8 rounded-3xl bg-white/[0.03] border border-white/5 transition-all hover:bg-white/[0.06] hover:border-lime-400/30 overflow-hidden cursor-pointer block"
+        >
           <div class="absolute -right-4 -bottom-4 text-white/[0.02] transform group-hover:scale-110 transition-transform duration-700">
              <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" :d="stat.icon" />
@@ -111,7 +116,7 @@ const prevImg = () => {
           </div>
           <p class="text-4xl font-black text-lime-400 mb-2">{{ stat.value }}</p>
           <p class="text-white/40 text-sm font-bold uppercase tracking-widest">{{ stat.label }}</p>
-        </div>
+        </router-link>
       </div>
 
       <!-- Core Values -->
